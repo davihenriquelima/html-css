@@ -1,0 +1,30 @@
+exemplos de html e css
+
+<h1>Exemplo de título</h1>
+
+<p>exemplo de parágrafo</p>
+
+<imgsrc="foto.png" alt=exemplodefoto">
+
+h1{
+   font-family:Arial Black;
+   font-size:20pt;
+   color:blue;
+
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="Width=device-width,
+        initial-scale=1.0">
+        <title>document</title>
+   </head>
+   <body>
+       <h1>Olá, Mundo!</h1>
+   
+   <body>
+</html>
+   

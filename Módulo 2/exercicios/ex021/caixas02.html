@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupin Tags</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgba(255, 176, 28, 0.809);
+            margin: 0px;
+
+        }
+        header{
+            background-color: orange;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(181, 9, 255, 0.465);
+            text-align: right;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.659); 
+            
+            
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: rgb(49, 49, 49);
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.589);
+
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(112, 112, 112);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+        <nav>
+            <a href="#">Biblioteca</a>
+            <a href="#">Planos</a>
+            <a href="#">Conteúdos</a>
+            <a href="#">Dúvidas Frequentes</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias do Dia</h2>
+                <h3>Eduardo Esterblitch é visto com Reinaldo Gianechini no Leblon</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto porro ab sapiente. Necessitatibus officia inventore incidunt quod doloremque nisi numquam minima accusantium dolor nemo laudantium, voluptatem nostrum a quos rem?</p>
+                <aside>
+                    <p>Artigo Escrito por Zé da Pindaíba</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Unitex Plague </p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
