@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgb(185, 185, 185);
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        thead {
+            background-color: rgb(42, 32, 32);
+        }
+        thead > tr > th {
+            color: aliceblue;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+        }
+       tbody > tr > th {
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .colimpar {
+            background-color: rgb(182, 182, 182);
+        }
+        .colpar {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="colimpar">
+            <col class="colpar">
+            <col class="colimpar">
+            <col class="colpar">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Junior</td>
+                <td>Masculino</td>
+                <td>23</td>
+                <td>Bombeiro</td>
+            </tr>
+            <tr>
+                <td>Marcus</td>
+                <td>Masculino</td>
+                <td>45</td>
+                <td>Policial</td>
+            </tr>
+            <tr>
+                <td>Daiane</td>
+                <td>Feminino</td>
+                <td>21</td>
+                <td>Enfermeira</td>
+            </tr>
+            <tr>
+                <td>Henrique</td>
+                <td>Masculino</td>
+                <td>43</td>
+                <td>Porteiro</td>
+            </tr>
+            <tr>
+                <td>Raissa</td>
+                <td>Feminino</td>
+                <td>23</td>
+                <td>Terapeuta</td>
+            </tr>
+            <tr>
+                <td>Vanessa</td>
+                <td>Feminino</td>
+                <td>39</td>
+                <td>Design de Moda</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
