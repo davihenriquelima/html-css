@@ -15,20 +15,114 @@
         cor04: #B25601
         cor05: #6D0D0D
         */
+        :root {
+            --cor01: #262623;
+            --cor02: #655733;
+            --cor03: #8F6E36;
+            --cor04: #B25601;
+            --cor05: #6D0D0D;
+            --cor06: #ff0000;
+
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-image: url(imagens/papeldeparede1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         div#logosite {
             text-align: center;
-            background-image: linear-gradient(to bottom, );
+            background-image: linear-gradient(to bottom, var(--cor03), var(--cor01) );
+            padding-top: 3px;
+            padding-bottom: 3px;
         }
         h1#nomeempresa {
             font-size: 0.8em;
             font-variant-caps: small-caps;
+            padding-bottom: 2px;
+            color: rgb(234, 234, 234);
+        }
+        nav {
+            background-color: var(--cor01);
+            padding-bottom: 3px;
+            text-align: right;
+        }
+        nav > a {
+            padding: 3px;
+            padding-right: 5px;
+            color: gray;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav > a:hover {
+            color: var(--cor06);
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.55);
+
+        }
+        main {
+            background-color: white;
+            min-width: 250px;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 40px;
+            padding: 0px 20px 20px 20px;
         }
         h1 {
             font-family: 'Times New Roman', Times, serif;
             font-size: 2em;
+        }
+        main p, h1#main, h2, h3 {
+            margin: 10px 10px;
+            text-align: justify;
+            letter-spacing: 0.7px;
+            line-height: 1,2em;
+        }
+        div.video {
+            background-image: linear-gradient(to bottom var(--cor01), var(--cor05) );
+            margin: 0px -20px 10px -20px;
+            padding: 0px 20px;
+            padding-bottom: 43%;
+            position: relative;
+        }
+        div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+        }
+        main a {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--cor05);
+        }
+        main a:hover {
+            text-decoration: underline;
+            color: var(--cor04);
+        }
+        abbr {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        div#william {
+            text-align: center;
+            margin: 30px 0px;
+        }
+        main ul, ol {
+            list-style-position: inside;
+            margin: 10px 10px;
+            text-align: justify;
+            letter-spacing: 0.7px;
+            line-height: 1,2em;
+        }
+        dl {
+            margin: 10px 10px;
+            letter-spacing: 0.7px;
+            line-height: 1,2em;
         }
     </style>
 </head>
@@ -36,17 +130,20 @@
     <header>
         <div id="logosite">
             <img src="imagens/logooslo.png" alt="logo" width="60px">
-            <h1 id="nomeempresa">Oslo Engenharia &Delta;</h1>
+            <h1 id="nomeempresa">Oslo Engenhari&Delta;</h1>
         </div>
-        <div id="menu">
-            <nav>Home</nav>
-            <nav>Chat</nav>
-            <nav>Suporte</nav>
-        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chat</a>
+            <a href="#">Suporte</a>
+        </nav>
     </header>
     <main>
         <article>
-            <h1>Aos Colaboradores. Ao Time.</h1>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NVGDN29LiuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h1 id="main">Aos Colaboradores. Ao Time.</h1>
             <h2>Foco na Missão</h2>
             <p>Em menos de <strong>2 anos</strong>, nossa empresa capitalizou um sonho de <strong>20 anos</strong>!</p>
             <p>Ainda há muito a fazer, mas até aqui conseguimos vencer todas as batalhas. Após altos e baixos, ultrapassamos as projeções além do imaginável.</p>
@@ -57,21 +154,21 @@
                     <img src="imagens/WilliamHMcRaven-G.jpg" alt="william mcraven">
                </picture>
             </div>
-            <cite><q>Se tenho aprendido algo em minhas viagens pelo mundo, é o poder da esperança. O poder de uma pessoa: Washington, Lincoln, Mandela, e até mesmo da jovem paquistanesa Malala. Uma pessoa pode mudar o mundo oferecendo <mark>esperança</mark> às pessoas.</q></cite>, ele afirma.
+            <p><cite><q>Se tenho aprendido algo em minhas viagens pelo mundo, é o poder da esperança. O poder de uma pessoa: Washington, Lincoln, Mandela, e até mesmo da jovem paquistanesa Malala. Uma pessoa pode mudar o mundo oferecendo <mark>esperança</mark> às pessoas.</q></cite>, ele afirma.</p>
         
             <p>Este discurso é verdadeiramente inspirador e serve para que cada membro da equipe entenda a força que tem, tanto para se motivar, diariamente, para fazer um trabalho de excelência, quanto para motivar seus colegas e as demais pessoas ao seu redor e não desistirem de seus sonhos, metas e objetivos. É como diz o Almirante da Marinha, <cite>William H. McRaven</cite>, nós temos a possibilidade de mudar o mundo quando ajudando alguém a continuar tendo esperança nos acontecimentos e também em si mesmo.</p>
 
             <p>Neste ano superamos todas as expectativas. Nos tornamos um dos maiores grupos de engenharia do país. Mas ainda há muito trabalho pela frente. Mas não falamos apenas de metas financeiras. Falamos de valores, além dos predefinidos. É sobre ser melhor hoje do que nosso eu de ontem. Para isso, precisamos definir os nossos principais objetivos a serem alcançados:
+                <ul>
+                    <li>Honestidade</li>
+                    <li>Respeito</li>
+                    <li>Justiça</li>
+                </ul>
             </p>
-            <ul>
-                <li>Honestidade</li>
-                <li>Respeito</li>
-                <li>Justiça</li>
-            </ul>
             <p>Sobretudo, aquele que pratica a justiça, não lhe falta todos os outros atributos. O justo age com equilíbrio para consigo mesmo e para com os outros. Este sabe o valor do companheirismo e da empatia, pois trata os outros da forma que convém à justiça, da forma que ele mesmo acha que deveria ser tratado.</p>
 
             <dl>
-                <dt>Ser Justo:</dt> <br>
+                <dt>Ser Justo:</dt>
                 <dd>Ser igualitário nos costumes, ser honesto, não agressivo com os outros, ser civilizado, educado e respeitoso. Mesmo em uma competição, sabe agir com cautela e respeito com seu adversário.</dd>
             </dl>
             <p>Agora que já definimos quem queremos ser, perseguiremos com determinação.</p>
