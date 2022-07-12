@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #050a09;
+    --cor02: #366144;
+    --cor03: #008b84;
+    --cor04: #00fffb;
+    --cor05: #0059ff;
+    --cor06: #001531;
+
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/papeldeparede1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+div#logosite {
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor02), var(--cor01) );
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+h1#nomeempresa {
+    font-size: 0.8em;
+    font-variant-caps: small-caps;
+    padding-bottom: 2px;
+    color: rgb(234, 234, 234);
+}
+nav {
+    background-color: var(--cor01);
+    padding-bottom: 3px;
+    text-align: right;
+}
+nav > a {
+    padding: 3px;
+    padding-right: 5px;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav > a:hover {
+    color: var(--cor04);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.55);
+
+}
+main {
+    background-color: white;
+    min-width: 250px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 0px 20px 20px 20px;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+main p, h1#main, h2, h3 {
+    margin: 10px 10px;
+    text-align: justify;
+    letter-spacing: 0.7px;
+    word-spacing: 1px;
+    line-height: 1,2em;
+}
+div.video {
+    background-image: linear-gradient(to bottom var(--cor01), var(--cor05) );
+    margin: 0px -20px 10px -20px;
+    padding: 0px 20px;
+    padding-bottom: 43%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor06);
+}
+abbr {
+    text-decoration: none;
+    font-weight: bold;
+}
+div#william {
+    text-align: center;
+    margin: 30px 0px;
+}
+mark {
+    background-color: rgb(188, 255, 122);
+}
+main ul, ol {
+    list-style-position: inside;
+    margin: 10px 10px;
+    text-align: justify;
+    letter-spacing: 0.7px;
+    line-height: 1,2em;
+}
+dl {
+    margin: 10px 10px;
+    letter-spacing: 0.65px;
+    line-height: 1,2em;
+}
+footer {
+    background-image: linear-gradient(to top, var(--cor03), var(--cor02), var(--cor01));
+    padding: 30px;
+    text-align: center;
+}
